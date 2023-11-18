@@ -1,0 +1,223 @@
+.cover-container {
+  max-width: 80rem;
+  color: white;
+}
+
+.main-body {
+  background-image: url("./images/cover_img_new.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+.main2-body {
+  background-image: url("./images/SignUp_img_new.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav a:hover {
+  color: rgb(153, 153, 153);
+}
+
+#footer {
+  color: white;
+}
+
+.login {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#msg {
+  text-align: center;
+  color: red;
+}
+
+.input-group-addon {
+  width: 60px;
+}
+
+.glyphicon {
+  margin: auto;
+  padding: 2px;
+}
+
+.form-control {
+  padding: 16px;
+}
+
+.btn-primary {
+  font-weight: bold;
+}
+
+.text-center {
+  color: white;
+}
+
+a.text-decoration-none {
+  color: rgb(255, 255, 255);
+}
+
+.dashboard {
+  width: 280px;
+  height: 100vh;
+}
+
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  width: 400px;
+  background: hsla(0, 0%, 86%, 0.29);
+  backdrop-filter: blur(10px);
+}
+
+.auth-container h3 {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  background: hsla(0, 0%, 86%, 0.925);
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Reciepe card in Dashboard CSS */
+
+:root {
+  --card-bg-color: #ffffff;
+  --card-text-color: #070705;
+  --dish-type-color: #000000;
+  --card-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  --global-radius: 16px;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(calc(33.33% - 20px), 1fr)
+  ); /* Three columns */
+  gap: 20px; /* Gap between cards */
+
+  padding: 30px;
+  max-height: calc(110vh - 100px);
+  max-width: 1200px; /* Set a maximum width for the grid */
+  margin: 0 auto; /* Center the grid */
+  overflow-y: auto;
+}
+
+.recipe-card {
+  background-color: var(--card-bg-color);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--global-radius);
+  color: var(--card-text-color);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  width: 100%;
+  max-width: none;
+}
+
+.recipe-card figure {
+  width: 100%;
+  margin: 0;
+  height: 10rem;
+  overflow: hidden;
+  border-radius: var(--global-radius) var(--global-radius) 0 0;
+  margin-bottom: 2rem;
+}
+
+.recipe-card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipe-card h1 {
+  margin: 0 1.5rem 2rem 1.5rem;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.5rem 0.5rem;
+  font-size: 13px;
+}
+
+.dish-type {
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  color: #fff;
+  margin: 0;
+  background-color: var(--dish-type-color);
+  padding: 0.25rem 1rem;
+  border-radius: 100px;
+}
+
+.dish-stats {
+  list-style: none;
+  padding: 5;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.dish-stats li {
+  opacity: 0.75;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.dish-stats li svg {
+  margin-right: 0.5rem;
+}
+
+.dish-stats li svg path {
+  stroke: var(--card-text-color);
+  stroke-opacity: 0.25;
+}
+.recipe-description {
+  padding: 0 20px; /* Adjust padding as needed */
+  /* Other existing styles for recipe description */
+}
+
+.recipe-description a{
+  text-decoration: none;
+}
